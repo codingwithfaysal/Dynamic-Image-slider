@@ -13,7 +13,7 @@ let backgroundImage = new Array(
     "img/bg6.jpg",
 )
 let i = 0;
-prev.addEventListener("click", function(){
+next.addEventListener("click", function(){
     if(i < 5){
         main_div.style.backgroundImage = `url(${backgroundImage[i+1]})`;
         thumbnail[i+1].classList.add("active");
@@ -21,7 +21,7 @@ prev.addEventListener("click", function(){
         i++;
     }
 })
-next.addEventListener("click", function(){
+prev.addEventListener("click", function(){
     if(i > 0){
         main_div.style.backgroundImage = `url(${backgroundImage[i-1]})`;
         thumbnail[i-1].classList.add("active");
